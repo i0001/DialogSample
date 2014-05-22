@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+  <Button android:id="@+id/bt_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_dialog" />
+  <Button android:id="@+id/bt_textdialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_textdialog" />
+  <Button android:id="@+id/bt_selectdialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_selectdialog" />
+  <Button android:id="@+id/bt_datedialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_datedialog" />
+  <Button android:id="@+id/bt_timedialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_timedialog" />
+  <Button android:id="@+id/bt_progressdialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bt_progressdialog" />
+  <TextView android:id="@+id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/tv_message" />
+  </LinearLayout>

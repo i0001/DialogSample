@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DialogSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+  <string name="bt_dialog">通常ダイアログ表示</string>
+  <string name="bt_textdialog">テキストダイアログ表示</string>
+  <string name="bt_selectdialog">単一選択ダイアログ表示</string>
+  <string name="bt_datedialog">日付選択ダイアログ表示</string>
+  <string name="bt_timedialog">時間選択ダイアログ表示</string>
+  <string name="bt_progressdialog">プログレスバーダイアログ表示</string>
+  <string name="tv_message">-------</string>
+
+
+</resources>
