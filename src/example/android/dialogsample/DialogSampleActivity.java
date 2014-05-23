@@ -113,6 +113,9 @@ public class DialogSampleActivity extends Activity {
 					for(int i=0; i< dialog.getMax();i++){
 						dialog.setProgress(i);
 						Thread.sleep(100);
+						//fot(i=0;i<10000;i++){}とやって何もしない処理で時間を引き延ばそうとしても
+						//最適化が働いて、このコマンド自体が飛ばされてしまうので、
+						//何もしない時間が必要な場合は、以上の様にsleepを使う
 					}
 				}catch (Exception e) {
 					// TODO: handle exception
@@ -140,10 +143,11 @@ public class DialogSampleActivity extends Activity {
 		public void showDatePickerDialog() {
 			Calendar cal = Calendar.getInstance();
 
-			DatePickerDialog dialog = new DatePickerDialog(DialogSampleActivity.this
-					,new DatePickerDialog.OnDateSetListener() {
-						public void onDateSet(DatePicker picker,
-											int year, int month, int day) {
+			DatePickerDialog dialog
+			 				= new DatePickerDialog(DialogSampleActivity.this,
+			 						new DatePickerDialog.OnDateSetListener() {
+			 							@Override
+			 							public void onDateSet(DatePicker picker, int year, int month,int day) {
 						label.setText("日付選択ダイアログ：" +
 										year + "年" + (month+1) + "月" + day + "日");
 						}
